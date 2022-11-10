@@ -1,0 +1,39 @@
+/** Pens: Color, price, quantity, rating
+Blue (4),4, 5
+Black (5), 11,4
+Red (3),13, 3
+Green (6),1,2
+Purple (7),12,1
+Pink (2),10, 5
+Yellow (7),9, 4
+Orange (8),8, 3
+White (9),7, 2
+Brown (10),6, 1
+Gold (11),5, 5
+Silver (12),4, 4
+Grey (13),3, 3
+Neon (14),2, 2
+Clear (15),1, 1
+**/
+
+CREATE TABLE pens ( id INTEGER PRIMARY KEY, color TEXT, Price INTEGER, quantity INTEGER, Rating INTEGER); 
+
+INSERT into pens VALUES (1,"blue",4,4,5);
+INSERT into pens VALUES (2, "black", 5,11,4);
+INSERT into pens VALUES (3, "red", 3,13,3);
+INSERT into pens VALUES (4, "green", 6,1,2);
+INSERT into pens VALUES (5, "purple", 7,12,1);
+INSERT into pens VALUES (6, "pink", 2,10,5);
+INSERT into pens VALUES (7, "yellow", 7,9 ,4);
+INSERT into pens VALUES (8, "orange", 8, 8,3);
+INSERT into pens VALUES (9, "white", 9, 7, 2);
+INSERT into pens VALUES (10, "brown", 10, 6,1);
+INSERT into pens VALUES (11, "Gold", 11, 5, 5);
+INSERT into pens VALUES (12, "Silver", 12, 4,4);
+INSERT into pens VALUES (13, "grey", 13,  3,3);
+INSERT into pens VALUES (14, "neon", 14, 2,2);
+INSERT into pens VALUES (15, "black", 15,1,1);
+
+SELECT * FROM pens;
+Select * from pens order by price desc;
+select AVG (rating) from (pens);
